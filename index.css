@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps|Rubik:300i,400,700&display=swap');
+/*
+font-family: 'Rubik', sans-serif; (light 300, bold 700)
+font-family: 'Oleo Script Swash Caps', cursive; 
+*/
+body {
+    background-color: #AD2323;
+    overflow: hidden;
+}
+/* header styling */
+header {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    background-color: #FFE486;
+    color: #AD2323;
+}
+header h1 {
+    padding: 0.25em;
+    width: 50%;
+    font-size: 72px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+header h2 {
+    width: 50%;
+    font-family: 'Rubik', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: -2%;
+    font-size: 36px;
+    text-align: right;
+    margin-top: 3%;
+    padding-right: 15px;
+}
+/* nav bar styling */
+nav {
+    color: #FFE486;
+    width: 25%;
+    height: 100vh;
+    border-right: 5px solid #FFE486;
+}
+nav ul {
+    text-align: center;
+}
+nav ul li {
+    padding: 0.50em 0px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.4rem;
+    line-height: 200%
+}
+nav ul li a {
+    position: relative;
+    color: #FFE486;
+    text-decoration: none;
+    transition: text-shadow .2s;
+}
+nav ul li a:hover {
+    color: #FFE486;
+    text-decoration: none;
+    text-shadow: 0px 0px 5px rgba(39, 0, 0, 0.425);
+}
+a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    
+    height: 2px;
+    left: 0;
+    position: absolute;
+    background: #FFE486;
+    transition: width 0.5s;
+    width: 0%;
+}
+a:hover:after {
+    width: 100%;
+
+}
