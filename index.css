@@ -4,13 +4,16 @@ font-family: 'Rubik', sans-serif; (light 300, bold 700)
 font-family: 'Oleo Script Swash Caps', cursive; 
 */
 body {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #AD2323;
-    overflow: hidden;
+
 }
 /* header styling */
 header {
+    overflow-y:hidden;
     width: 100%;
-    height: 20%;
+    height: 20vh;
     display: flex;
     align-items: center;
     background-color: #FFE486;
@@ -28,26 +31,27 @@ header h2 {
     font-style: italic;
     font-weight: 300;
     letter-spacing: -2%;
-    font-size: 36px;
+    font-size: 2.25rem;
     text-align: right;
     margin-top: 3%;
     padding-right: 15px;
 }
 /* nav bar styling */
 nav {
+    overflow-y:hidden;
     color: #FFE486;
     width: 25%;
-    height: 100vh;
+    height: 80vh;
     border-right: 5px solid #FFE486;
 }
 nav ul {
     text-align: center;
 }
 nav ul li {
-    padding: 0.50em 0px;
+    padding: 0.70em 0px;
     font-family: 'Rubik', sans-serif;
     font-size: 1.4rem;
-    line-height: 200%
+    line-height: 150%
 }
 nav ul li a {
     position: relative;
@@ -64,7 +68,6 @@ a:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
-    
     height: 2px;
     left: 0;
     position: absolute;
@@ -74,5 +77,73 @@ a:after {
 }
 a:hover:after {
     width: 100%;
+}
+:root {
+    font-size: 16px;
+}
+/* body styles */
+#bodyHeader {
+    display: flex;
+    flex-direction: column;
+    color: #FFE486;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.bodyContainer {
+    height: 80vh;
+    overflow-y:scroll;
+    z-index: 99;
+    width: 74%;
+    display: flex;
+    flex-direction: row;
+}
+#bodyMain {
 
+    width: 100%;
+
+}
+#bodyHeader h1 {
+    text-align: center;
+    padding-top: 0.25em;
+    font-size: 64px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+#bodyPara {
+    padding-top: 1em;
+    font-family: 'Rubik', sans-serif;
+}
+#bodyPara p {
+    line-height: 150%;
+}
+#bold {
+    font-weight: bold;
+}
+/* menu items */
+#bodyMenu {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+.menuItem {
+    margin: 1em;
+    width: 200px;
+    height: 170px;
+    font-family: 'Rubik', sans-serif;
+    border: solid 5px #FFE486;
+    border-radius: 5px;
+    padding: 1em;
+    color: #FFE486;
+}
+.menuItem h1 {
+    font-size: 2vw;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+.menuItem::after #spicy {
+    font-family: "Font Awesome 5 Free";
+    content: "\f816";
+    vertical-align: middle;
+    font-weight: 900;
+    display: inline-block;
 }
